@@ -6,117 +6,31 @@
   <title>光的受孕：我的性別在哪裡</title>
   <meta name="description" content="社課講義｜柴柏松《光的受孕》選讀">
   <style>
-:root {
-  --ink: #292431;
-  --muted: #6f6878;
-  --paper: #fbfaf7;
-  --accent: #7a5c92;
-  --accent-2: #a95765;
-  --soft: #f3eef5;
-  --quote: #f8f6f1;
-  --quote-line: #cdbfd6;
-  --discussion: #fff6ea;
-  --discussion-line: #d49a63;
-}
+:root { --ink: #292431; --muted: #6f6878; --paper: #fbfaf7; --accent: #7a5c92; --accent-2: #a95765; --soft: #f3eef5; --quote: #f8f6f1; --quote-line: #cdbfd6; --discussion: #fff6ea; --discussion-line: #d49a63; }
 * { box-sizing: border-box; }
 html { background: #eeece8; }
-body {
-  margin: 0;
-  color: var(--ink);
-  font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
-  line-height: 1.72;
-  font-size: 15px;
-}
-.hero {
-  background: linear-gradient(135deg, #f7f2f3, #f6f2ea 58%, #eee6f0);
-  border-bottom: 1px solid #ded6df;
-}
-.hero-inner, main {
-  width: min(900px, calc(100vw - 36px));
-  margin: 0 auto;
-}
+body { margin: 0; color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif; line-height: 1.72; font-size: 15px; }
+.hero { background: linear-gradient(135deg, #f7f2f3, #f6f2ea 58%, #eee6f0); border-bottom: 1px solid #ded6df; }
+.hero-inner, main { width: min(900px, calc(100vw - 36px)); margin: 0 auto; }
 .hero-inner { padding: 72px 0 54px; }
-h1 {
-  margin: 0;
-  color: var(--accent);
-  font-size: clamp(2.4rem, 7vw, 4.4rem);
-  line-height: 1.08;
-  letter-spacing: 0;
-}
-.subtitle {
-  margin: 20px 0 0;
-  color: var(--muted);
-  font-size: 1.18rem;
-}
-.source-link {
-  display: inline-block;
-  margin-top: 28px;
-  color: var(--accent-2);
-  text-decoration: none;
-  border-bottom: 1px solid currentColor;
-}
-main {
-  background: var(--paper);
-  padding: 34px 48px 70px;
-  box-shadow: 0 20px 60px rgba(48, 39, 58, 0.10);
-}
-h2 {
-  margin: 2.2rem 0 1rem;
-  padding-bottom: .3rem;
-  border-bottom: 1px solid #d7cbdc;
-  color: var(--accent);
-  font-size: 1.55rem;
-}
-h3 {
-  margin: 2rem 0 .75rem;
-  color: var(--ink);
-  font-size: 1.16rem;
-}
+h1 { margin: 0; color: var(--accent); font-size: clamp(2.4rem, 7vw, 4.4rem); line-height: 1.08; letter-spacing: 0; }
+.subtitle { margin: 20px 0 0; color: var(--muted); font-size: 1.18rem; }
+.source-link { display: inline-block; margin-top: 28px; color: var(--accent-2); text-decoration: none; border-bottom: 1px solid currentColor; }
+main { background: var(--paper); padding: 34px 48px 70px; box-shadow: 0 20px 60px rgba(48, 39, 58, 0.10); }
+h2 { margin: 2.2rem 0 1rem; padding-bottom: .3rem; border-bottom: 1px solid #d7cbdc; color: var(--accent); font-size: 1.55rem; }
+h3 { margin: 2rem 0 .75rem; color: var(--ink); font-size: 1.16rem; }
 p { margin: .78rem 0; }
 a { color: var(--accent-2); }
 ol, ul { padding-left: 1.45rem; }
 li { margin: .45rem 0; }
-.note, .discussion {
-  margin: .85rem 0 1rem;
-  padding: .72rem .95rem;
-  border-left: 4px solid var(--accent);
-  background: var(--soft);
-  border-radius: 6px;
-  font-size: .93rem;
-}
-.note span, .discussion span {
-  margin-right: .65em;
-  font-weight: 700;
-  color: var(--accent);
-}
-.discussion {
-  background: var(--discussion);
-  border-left-color: var(--discussion-line);
-}
+.note, .discussion { margin: .85rem 0 1rem; padding: .72rem .95rem; border-left: 4px solid var(--accent); background: var(--soft); border-radius: 6px; font-size: .93rem; }
+.note span, .discussion span { margin-right: .65em; font-weight: 700; color: var(--accent); }
+.discussion { background: var(--discussion); border-left-color: var(--discussion-line); }
 .discussion span { color: var(--discussion-line); }
-.excerpt {
-  margin: 1.05rem 0 1.25rem;
-  padding: 1rem 1.2rem;
-  border: 1px solid var(--quote-line);
-  border-left: 5px solid var(--quote-line);
-  border-radius: 8px;
-  background: var(--quote);
-  font-size: 1.1rem;
-  line-height: 1.86;
-}
+.excerpt { margin: 1.05rem 0 1.25rem; padding: 1rem 1.2rem; border: 1px solid var(--quote-line); border-left: 5px solid var(--quote-line); border-radius: 8px; background: var(--quote); font-size: 1.1rem; line-height: 1.86; }
 .excerpt p { margin: .45rem 0; }
-footer {
-  width: min(900px, calc(100vw - 36px));
-  margin: 0 auto;
-  padding: 22px 0 46px;
-  color: var(--muted);
-  font-size: .9rem;
-}
-@media (max-width: 680px) {
-  main { padding: 24px 22px 52px; width: 100%; box-shadow: none; }
-  .hero-inner { width: calc(100vw - 36px); padding: 52px 0 42px; }
-  .excerpt { font-size: 1.03rem; padding: .9rem 1rem; }
-}
+footer { width: min(900px, calc(100vw - 36px)); margin: 0 auto; padding: 22px 0 46px; color: var(--muted); font-size: .9rem; }
+@media (max-width: 680px) { main { padding: 24px 22px 52px; width: 100%; box-shadow: none; } .hero-inner { width: calc(100vw - 36px); padding: 52px 0 42px; } .excerpt { font-size: 1.03rem; padding: .9rem 1rem; } }
 </style>
 </head>
 <body>
@@ -322,7 +236,7 @@ footer {
     <p>《光的受孕》這個題名最動人的地方，在於它把不可能放在一起。光不能受孕，詩人的身體也不能以世俗定義受孕；可是想像力讓「孕育」從生理事實轉向精神創造。詩中的光常常穿過傷痕、窗、皮膚與海面，它不是把一切照亮的神蹟，而是讓未能被承認的生命慢慢成形。</p>
     <h3>三、怎麼讀跨性別書寫</h3>
     <p>閱讀這些詩時，最需要避免的是把文本化約成「跨性別者就是這樣」。柴柏松寫的是她的生命，不是替所有跨性別者交出標準答案。更好的讀法，是看她如何把特定經驗寫成可被他人感受的文學形式：用胡桃寫體魄，用樹脂寫傷口，用海灘寫親密，用候診室寫平凡而艱難的存在。</p>
-    <h2>可使用的開場問題</h2>
+    <h2>開場問題</h2>
     <ol>
     <li>你在這組文本裡最先被哪個意象吸引？為什麼？</li>
     <li>「沒有生病，但需要吃藥」這句話如何改變我們對醫療、身體與自我的想像？</li>
@@ -341,6 +255,6 @@ footer {
     <li><a href="https://www.kobo.com/tw/zh/ebook/nBncalJG-D-UbDjXqrqEWg">Rakuten Kobo：《光的受孕》電子書資訊</a></li>
     </ul>
   </main>
-  <footer>Published as a GitHub Pages handout.</footer>
+  <footer>Published as a GitHub Pages handout. Last updated: 2026-05-03 18:27:06 CST</footer>
 </body>
 </html>
